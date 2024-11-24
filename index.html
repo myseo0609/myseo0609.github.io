@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대전빵역시</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff7ed; /* 배경 색상 */
+        }
+
+        header {
+            background-color: antiquewhite;
+            padding: 20px 0;
+            position: relative;
+            text-align: center;
+        }
+
+        #name {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 14px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        #intro {
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background-color: bisque;
+        }
+
+        #menu li {
+            flex: 1; /* 모든 항목이 같은 크기로 */
+            text-align: center;
+            line-height: 50px;
+        }
+
+        #menu li a {
+            text-decoration: none;
+            color: #442900; /* 텍스트 색상 */
+            font-weight: bold;
+            display: block;
+        }
+
+        #menu li:hover{
+                background-color: rgb(248, 179, 76);
+            }
+        
+        #place {
+             background-color: #ffffff; /* 배경색 */
+            border-radius: 8px; /* 모서리를 둥글게 */
+            padding: 60px; /* 내부 간격 */
+            margin: 20px auto; /* 바깥 간격 */
+            width: 100%; /* 너비 */
+            max-width: 1500px; /* 최대 너비 */
+        }
+        .place {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h2{
+            color: #442900;
+        }
+
+        #rec {
+             background-color: #ffffff; /* 배경색 */
+            border-radius: 8px; /* 모서리를 둥글게 */
+            padding: 60px; /* 내부 간격 */
+            margin: 20px auto; /* 바깥 간격 */
+            width: 100%; /* 너비 */
+            max-width: 1500px; /* 최대 너비 */
+        }
+
+        #rec img{
+            float: left;
+        }
+        .rec li{
+            float: left;
+        }
+    
+        #event {
+             background-color: #ffffff; /* 배경색 */
+            border-radius: 8px; /* 모서리를 둥글게 */
+            padding: 60px; /* 내부 간격 */
+            margin: 20px auto; /* 바깥 간격 */
+            width: 100%; /* 너비 */
+            max-width: 1500px; /* 최대 너비 */
+        }
+
+        #search {
+             background-color: #ffffff; /* 배경색 */
+            border-radius: 8px; /* 모서리를 둥글게 */
+            padding: 60px; /* 내부 간격 */
+            margin: 20px auto; /* 바깥 간격 */
+            width: 100%; /* 너비 */
+            max-width: 1500px; /* 최대 너비 */
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <p id="name">20230327 임서연</p>
+        <h1>대전광역시 빵집의 모든 것</h1>
+    </header>
+
+    <p id="intro"><b>원하시는 메뉴를 눌러 검색해보세요.</b></p>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="#home">홈</a></li>
+            <li><a href="#place">구역별 빵집</a></li>
+            <li><a href="#rec">추천 빵집</a></li>
+            <li><a href="#event">이벤트</a></li>
+            <li><a href="#search">빵집 검색</a></li>
+        </ul>
+    </nav>
+
+    <br><br><br>
+
+    <section id="place">
+        <h2>구역별 빵집</h2>
+        <p>대전광역시의 구별 목록입니다.</p>
+        <br><hr><br><br>
+        <form class="place">
+        <p><b>유성구</b></p>
+        <select name="yuseong">
+            <option value="1">파이룸</option>
+            <option value="2">하루팡</option>
+            <option value="3" selected>파셀</option>
+            <option value="4">콜마르브레드</option>
+            <option value="5">오디너리베이크샵</option>
+        </select>
+        <p><b>서구</b></p>
+        <select name="seo">
+            <option value="1">하레하레</option>
+            <option value="2" selected>베이크오프</option>
+            <option value="3">로라네방앗간</option>
+            <option value="4">싶빵공장</option>
+            <option value="5">관저당</option>
+        </select>
+        <p><b>동구</b></p>
+        <select name="dong">
+           <option value="1">빵 한모금</option>
+           <option value="2" >베이크샵 수하</option>
+           <option value="3" selected>정동문화사</option>
+           <option value="4">캔디콥스 하우스</option>
+           <option value="5">이동수 베이커리</option>
+        </select>
+        <p><b>중구</b></p>
+        <select name="jung">
+           <option value="1">콜드버터베이크샵</option>
+           <option value="2" selected >성심당</option>
+           <option value="3">로로네 베이크샵</option>
+           <option value="4">뮤제</option>
+           <option value="5">성심당</option>
+        </select>
+        <p><b>대덕구</b></p>
+        <select name="daeduck">
+            <option value="1">보보로베이커리</option>
+           <option value="2" >카페누룽지</option>
+           <option value="3" selected>몽심</option>
+           <option value="4">에코브레드하우스</option>
+           <option value="5">오렌지블로썸</option>
+        </select>
+      </form>
+    </section>
+
+    <section id="rec">
+        <h2>추천 빵집</h2>
+        <p>빵순이가 추천하는 빵집입니다.</p>
+        <br><hr><br><br>
+         <ul>
+            <li class="rec"><b>정동문화사</b></li> <br>
+            <img src="image/정동문화사.jpg" width="150" height="150">
+            <img src="image/정동문화사2.jpg" width="150" height="150">
+            <img src="image/정동문화사3.jpg" width="150" height="150">
+            <img src="image/정동문화사4.jpg" width="150" height="150">
+            <img src="image/정동문화사5.jpg" width="150" height="150">
+            <img src="image/정동문화사6.jpg" width="150" height="150">
+            <br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 제가 먹어본 <b>휘낭시에</b> 중 <b>1등!</b></p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*  빠작하고 버터맛이 강한 휘낭시에 입니다. </p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 바닐라빈 향이 가득한 부드러운 <b>에그타르트</b>입니다.</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 겉은 빠작 속은 촉촉한 <b>까눌레</b>도 맛있어요. </p>
+         </ul>
+    </section>
+
+    <section id="event">
+        <h2>이벤트</h2>
+        <p>빵집의 이벤트를 알려 드립니다.</p>
+        <br><hr><br><br>
+        <h3>1. 몽심</h3> 
+        <p>- 2024 빵 축제에서 1등한 몽심은 3개의 지점에서 <mark>1+1 이벤트</mark>를 하기로 약속했습니다. </p>
+        <p>- 현재 대흥점만 1+1 이벤트 진행을 완료하였습니다.</p>
+        <br>
+        <h3>2. 콜마르브레드</h3> 
+        <p> - 콜마르브레드는 <mark>매달 마지막 주 수요일이 쿠폰 행사 날</mark> 입니다. </p>
+        <p> - 만 원 이상 3천원, 만 오천 원 이상 5천 원, 2만 원 이상 7천 원 쿠폰을 증정합니다.</p>
+    </section>
+
+    <footer id="search">
+        <h2>빵집 검색</h2>
+        <p>홈페이지에 나오지 않거나 더 알아보고 싶은 빵집을 검색해보세요.</p>
+        <br><hr><br><br>
+        <form name="sform" action="https://search.naver.com/search.naver" method="get">
+            검색: <input name="query" type="text" placeholder="성심당">
+            <input type="submit" value="검색">
+        </form>
+    </footer>
+</body>
+</html>
